@@ -4,10 +4,7 @@ import java.net.*;
 import java.io.*;
 
 /**
- * This program is a socket client application that connects to a time server to
- * get the current date time.
- *
- * @author www.codejava.net
+ * This program is a socket client 
  */
 public class MainClass {
 
