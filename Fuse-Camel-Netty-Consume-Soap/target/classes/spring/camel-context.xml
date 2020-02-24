@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:camel="http://camel.apache.org/schema/spring"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="     http://www.springframework.org/schema/beans      http://www.springframework.org/schema/beans/spring-beans.xsd      http://www.springframework.org/schema/context      http://www.springframework.org/schema/context/spring-context.xsd     http://camel.apache.org/schema/spring     http://camel.apache.org/schema/spring/camel-spring.xsd">
+    <context:component-scan base-package="com.shengwang.example"/>
+    <!-- ================================== -->
+    <!-- Define camel context               -->
+    <!-- ================================== -->
+    <camel:camelContext id="camel">
+        <!-- Location for route scan -->
+        <camel:package>com.netty.fuse</camel:package>
+    </camel:camelContext>
+    <!-- ================================== -->
+    <!-- Define netty  codecs               -->
+    <!-- ================================== -->
+    <!-- ChannelBuffer/ByteBuf to String -->
+    <bean class="org.jboss.netty.handler.codec.string.StringDecoder" id="stringDecoder"/>
+    <!-- String to ChannelBuffer/ByteBuf -->
+    <bean class="org.jboss.netty.handler.codec.string.StringEncoder" id="stringEncoder"/>
+</beans>

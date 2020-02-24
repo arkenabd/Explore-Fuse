@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns1="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname namespaceURI="http://main.ws.info.emp/" localpart="EmpInfoWs"/>
+      <port-info>
+         <wsdl-port namespaceURI="http://main.ws.info.emp/" localpart="EmpInfoWsPort"/>
+         <runtime/>
+         <operations>
+            <operation name="getEmployeeInfo"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

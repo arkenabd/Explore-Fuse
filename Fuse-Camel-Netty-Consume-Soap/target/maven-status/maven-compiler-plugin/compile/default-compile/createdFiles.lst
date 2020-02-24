@@ -1,0 +1,4 @@
+org\mycompany\iso8583JPosPack.class
+org\mycompany\EchoService.class
+org\mycompany\route\ServerRoute.class
+org\mycompany\Application.class
